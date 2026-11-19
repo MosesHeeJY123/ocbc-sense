@@ -1,0 +1,26 @@
+# Dependencies and builds
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Secrets and local settings (keep the example)
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Backups and packaged updates
+*.zip
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

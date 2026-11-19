@@ -1,0 +1,75 @@
+{
+  "step_id": "account.step1",
+  "title": "Check you're eligible",
+  "screens": [
+    {
+      "screen_id": "eligibility_form",
+      "description": "The customer selects their passport country and enters their date of birth before checking eligibility."
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "eligibility_overview",
+      "screen_id": "eligibility_form",
+      "field_id": null,
+      "topic": "Eligibility Check",
+      "content": "This step asks the customer to confirm their passport country and date of birth before continuing with the application."
+    },
+    {
+      "id": "passport_country",
+      "screen_id": "eligibility_form",
+      "field_id": "passport_country",
+      "topic": "Passport Country",
+      "content": "Select the country that issued your passport. This field asks for your passport country, not your current location."
+    },
+    {
+      "id": "date_of_birth",
+      "screen_id": "eligibility_form",
+      "field_id": "date_of_birth",
+      "topic": "Date of Birth",
+      "content": "Enter your date of birth in DD/MM/YYYY format. The eligibility screen states that customers must be 18 or older."
+    },
+    {
+      "id": "check_eligibility_button",
+      "screen_id": "eligibility_form",
+      "field_id": "check_eligibility",
+      "topic": "Check Eligibility Button",
+      "content": "The Check eligibility button is used after providing the requested passport country and date of birth. The application then checks whether the customer can continue."
+    },
+    {
+      "id": "eligibility_requirements",
+      "screen_id": "eligibility_form",
+      "field_id": null,
+      "topic": "Eligibility Requirements",
+      "content": "To sign up remotely, the customer must be at least 18 years old and have a biometric passport issued by Hong Kong, Malaysia, Indonesia or Mainland China."
+    },
+    {
+      "id": "biometric_passport_check",
+      "screen_id": "eligibility_form",
+      "field_id": null,
+      "topic": "Biometric Passport",
+      "content": "A biometric passport has a small chip symbol on its cover. This app works with biometric passports from Hong Kong, Malaysia, Indonesia or Mainland China."
+    },
+    {
+      "id": "passport_not_supported",
+      "screen_id": "eligibility_form",
+      "field_id": "passport_country",
+      "topic": "Passport Not on the List",
+      "content": "If the customer's passport is not on the list, remote sign-up with an e-passport is not available for that passport yet. The customer can tap Talk to a person, and a staff member can tell them what their options are."
+    },
+    {
+      "id": "error_country_not_supported",
+      "screen_id": "eligibility_form",
+      "field_id": "passport_country",
+      "topic": "What went wrong: passport country not supported (COUNTRY_NOT_SUPPORTED)",
+      "content": "If the customer sees the passport country error, the selected country is not one that remote sign-up supports. A common mistake is choosing the country where they live instead of the country that issued their passport. They should select the country printed on their passport. Remote sign-up supports biometric passports from Hong Kong, Malaysia, Indonesia or Mainland China."
+    },
+    {
+      "id": "error_age_requirement",
+      "screen_id": "eligibility_form",
+      "field_id": "date_of_birth",
+      "topic": "What went wrong: age requirement (AGE_REQUIREMENT)",
+      "content": "If the customer sees the age error, the date of birth shows they are under 18. Customers must be 18 or older to sign up remotely. They should check the date of birth was entered correctly in DD/MM/YYYY format, as swapping the day and month or a wrong year is a common mistake."
+    }
+  ]
+}
